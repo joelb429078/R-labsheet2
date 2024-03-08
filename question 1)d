@@ -1,0 +1,7 @@
+
+Xlargesamp <- rnorm(1000, mean = 10, sd = 5)
+Ylargesamp <- rnorm(1000, mean = 24, sd = 12)
+Slargesamp <- Ylargesamp - Xlargesamp
+#generating a QQ plot for S_large
+newqqplot(Slargesamp, main = "QQ - large sample")
+qqlineplot(Slargesamp, lwd = 2)
